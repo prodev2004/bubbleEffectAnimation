@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: flex-end;
+    min-height: 100vh;
+    background-color: rgb(7, 9, 22);
+    overflow: hidden;
+}
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, .329);
+    font-size: 6rem;
+    letter-spacing: 20px;
+}
+span {
+    margin: 0 30px;
+    width: 70px;
+    aspect-ratio: 1 / 1;
+    transform: translateY(150%);
+    display: inline-block;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, .3),
+                inset -3px -3px 10px rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    animation: float infinite linear;
+}
+
+span:nth-child(1) {
+    animation-duration: 2s;
+    width: 80px;
+}
+span:nth-child(2) {
+    animation-duration: 5s;
+    width: 60px;
+}
+span:nth-child(3) {
+    animation-duration: 3s;
+    width: 60px;
+}
+span:nth-child(4) {
+    animation-duration: 6s;
+    width: 40px;
+}
+span:nth-child(5) {
+    animation-duration: 4s;
+    width: 50px;
+}
+span:nth-child(6) {
+    animation-duration: 3s;
+    width: 70px;
+}
+span:nth-child(7) {
+    animation-duration: 5s;
+    width: 100px;
+}
+span:nth-child(8) {
+    animation-duration: 2s;
+    width: 70px;
+}
+span:nth-child(9) {
+    animation-duration: 3s;
+    width: 50px;
+}
+span:nth-child(10) {
+    animation-duration: 2s;
+    width: 90px;
+}
+span:nth-child(11) {
+    animation-duration: 3s;
+    width: 120px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(150%);
+    }
+    50% {
+        transform: translate(-50%, -500%);
+    }
+    99% {
+        transform: translate(100%, -1000%);
+    }
+    100% {
+        opacity: 0;
+    }
+}
